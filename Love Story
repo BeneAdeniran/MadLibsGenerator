@@ -1,0 +1,53 @@
+# Creating a Mad Libs Generator with user input // a love story
+n = str(input("Enter your name: "))
+name = n.capitalize()
+title = str(input("Are you a King, Queen, or Non-Binary Royalty? "))
+title_lower = title.lower()
+k = str(input("Enter your Kingdom: "))
+kingdom = k.capitalize()
+l = str(input("Enter your love interest name: "))
+LoveInterest_Name = l.capitalize()
+
+if title_lower == "king":
+    print("Once upon a time, there was a King named " + name + ". " +
+          name + " had ruled the " + kingdom + " kingdom for ten years. \n" +
+          "The people of " + kingdom + " loved their King very much. Unfortunately, " +
+          "The people saw the sadness of their King.\nYou see, the king was all alone." +
+          " One day on the way back to the castle, "
+          "the King ran into the most \nattractive human being that has ever touched " + "the earth." +
+          "The person's name was " + LoveInterest_Name + ". " + name + " and " + LoveInterest_Name + "'s love,"
+          + " \nfrom then on, bloomed and grew.")
+
+    print()
+    print("The end." "\nHope you enjoyed the little story!")
+
+elif title_lower == "queen":
+    print("Once upon a time, there was a Queen named " + name + ". " +
+          name + " had ruled the " + kingdom + " kingdom for ten years. \n" +
+          "The people of " + kingdom + " loved their Queen very much. Unfortunately, " +
+          "The people saw the sadness of their Queen.\nYou see, the king was all alone." +
+          " One day on the way back to the castle, " +
+          "the Queen ran into the most \nattractive human being that has ever touched " + "the earth." +
+          "The person's name was " + LoveInterest_Name + ". " + name + " and " + LoveInterest_Name + "'s love,"
+          + " \nfrom then on, bloomed and grew.")
+
+    print()
+    print("The end." "\nHope you enjoyed the little story!")
+
+elif title_lower == "non-binary royalty":
+    print("Once upon a time, there was a Royal Highness named " + name + ". " +
+          name + " had ruled the " + kingdom + " kingdom for ten years. \n" +
+          "The people of " + kingdom + " loved their Royal Highness very much. Unfortunately, " +
+          "The people saw the sadness of their Royal Highness.\nYou see, the king was all alone." +
+          " One day on the way back to the castle, " +
+          "the Royal Highness ran into the most \nattractive human being that has ever " + "touched the earth." +
+          "The person's name was " + LoveInterest_Name + ". " + name + " and " + LoveInterest_Name + "'s love,"
+          + " \nfrom then on, bloomed and grew.")
+
+    print()
+    print("The end." "\nHope you enjoyed the little story!")
+
+else:
+    print("Sorry, there is no story for " + title + ".")
+
+
